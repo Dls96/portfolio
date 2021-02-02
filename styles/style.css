@@ -1,0 +1,33 @@
+body{
+    background-color: #0000;
+}
+
+div.icons a,iconify-icon{
+    color: black;
+}
+
+.topnav{
+    background-color: #525350;
+    overflow: hidden;
+}
+
+.topnav a{
+    height: 8%;
+    width 100%;
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.topnav a:hover{
+    background-color: #0000;
+    color: white;
+}
+
+.topnav a:active{
+    background-color: #0000;
+    color:white;
+}
