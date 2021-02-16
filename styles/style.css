@@ -1,33 +1,136 @@
-body{
-    background-color: #0000;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-div.icons a,iconify-icon{
-    color: black;
+
+.links{
+    margin-top: 20px;
+    height: 30%;
+    left: 2%;
+    z-index: -1;
+    position: relative;
 }
 
-.topnav{
-    background-color: #525350;
-    overflow: hidden;
+.links a{
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
 }
 
-.topnav a{
-    height: 8%;
-    width 100%;
-    float: right;
-    color: white;
+.welcome_div{
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.877);
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    width: 100%;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
 }
 
-.topnav a:hover{
-    background-color: #0000;
-    color: white;
+.welcome_h1{
+    font-size: 55px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(52, 233, 45);
 }
 
-.topnav a:active{
-    background-color: #0000;
-    color:white;
+.myName_h2{
+    font-size: 140px;
+    color: rgb(255, 255, 255);
+}
+
+.job_h3{
+    font-size: 40px;
+    color: rgb(158, 157, 157);
+}
+
+.bg{
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background: black;
+}
+
+.scroll_down{
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mouse{
+    width: 2.5rem;
+    height: 5rem;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    margin-bottom: .5rem;
+    display: flex;
+}
+.mouse span{
+    width: 1rem;
+    height: 1rem;
+    background-color: #34e92d;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    animation: move_wheel 1s linear infinite;
+}
+
+.arrow span{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid transparent;
+    border-right-color: #34e92d;
+    border-bottom-color: #34e92d;
+    transform: rotate(45deg);
+    animation: arrow_down 1s alternate infinite;
+}
+
+@keyframes move_wheel{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-1rem);
+    }
+}
+
+@keyframes arrow_down{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .25;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+section{
+    height: 100%;
+    width: 100%;
+}
+section::after{
+    background: url("../images/background.jpg") no-repeat;
+    content: "";
+    height: 99%;
+    width: 100%;
+    opacity: 1;
+    position: fixed;
+    z-index: -1;  
 }
