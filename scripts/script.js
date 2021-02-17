@@ -9,3 +9,10 @@ function typeWriter() {
       setTimeout(typeWriter, speed);
     }
   }
+
+  function pageSkills(){
+    $('button .skills').on("click", function(){
+      $(".pageSkills").css({"width": "30%", "height": "400px"});
+      $(".pageSkills").fadeIn(1000);
+    });
+  }
