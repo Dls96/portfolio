@@ -13,7 +13,7 @@ html{
 body{
     width: 100%;
     height: 100;
-    background: linear-gradient(75deg,#1900d6, #066297);
+    background: linear-gradient(to right bottom, #1dfb30, #00deb0, #00b8ff, #0087ff, #0f1af3);
 }
 
 a{
@@ -27,10 +27,14 @@ p{
 }
 
 img{
-    width: 100%;
+    margin-top: 1rem;
+    width: 25vw; 
+    border-radius: 10%;
+    box-shadow: 6px 7px 22px 7px rgba(0,0,0,0.94);
 }
 
 .container{
+    
     width: 90%;
     max-width: 120rem;
     height: 100%;
@@ -39,49 +43,10 @@ img{
 
 }
 
-.top_nav{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: -100vh;
-    background-color: #16162d;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    transition: all 500ms cubic-bezier(1, 0, 0, 1);
-}
-
-.nav_list{
-    list-style: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 li{
     margin: 0 2rem;
 }
-
-.nav_link{
-    font-family: 'Montana', sans-serif;
-    font-size: 5rem;
-    padding: 1rem;
-}
-
-.nav_link:hover,
-.nav_link:focus{
-    background: linear-gradient(to top, #039983, #2496E8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.top_nav.open{
-    top: 0;
-    border-radius: initial;
-}
-
-
 
 section{
     padding: 5rem 0 ;
@@ -97,7 +62,7 @@ section{
 
 .section-heading h1{
     font-size: 3.5rem;
-    color: rgba(255, 255, 255, .3);
+    color: rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
@@ -148,7 +113,7 @@ header{
 .landing-text h1{
     font-size: 14rem;
     font-family: 'Montana', sans-serif;
-    background: linear-gradient(to top, #090333, #54549c);
+    background: #005CDC;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -158,7 +123,7 @@ header{
 .landing-text h6{
     font-size: 2rem;
     font-weight: 300;
-    color: rgb(190, 187, 187);
+    color: #5e6279;
 }
 
 .about .container{
@@ -176,7 +141,7 @@ header{
 
 .about-heading h1{
     font-size: 10rem;
-    opacity: .3;
+    opacity: .4;
 }
 
 .about-heading h6{
@@ -209,18 +174,24 @@ header{
 }
 
 .fa-linkedin:hover{
-    color: #1E1926;
+    color: #00deb0;
 }
 
 .fa-github:hover{
-    color: #1E1926;
+    color: #00deb0;
 }
 
 .fa-envelope:hover{
-    color: #1E1926;
+    color: #00deb0;
 }
 
 .my_skills{
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin-top: 10rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -245,7 +216,7 @@ header{
 .progress_container{
     margin-left: 2rem;
     width:100%;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .sk{
@@ -291,6 +262,7 @@ header{
 .img-profile{
     width: 50rem;
     flex: 1;
+    
 }
 
 .proj-description{
@@ -317,7 +289,7 @@ header{
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: #C3F094;
+    color: #24fa24;
     transition: color 500ms;
 }
 
@@ -325,11 +297,7 @@ header{
     color: #208CA7;
 }
 
-.proj-img img{
-    margin-top: 1rem;
-    width: 25vw; 
-    border-radius: 20%;
-}
+
 .has-margin-right{
     margin-right: 5rem;
 }
@@ -337,7 +305,12 @@ header{
 .copyright{
     width: 100%;
     text-align: center;
-    background-color: #090333;
+    background: rgba(0, 255, 191, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 2rem 0;
     position:relative
 }
@@ -352,7 +325,7 @@ header{
     border-radius: 100%;
     display: flex;
     cursor: pointer;
-    animation: pulse .8s infinite;
+    animation: pulse 1s infinite;
 }
 
 .get_cv a{
@@ -361,7 +334,7 @@ header{
 }
 
 .get_cv i {
-    color: #090333;
+    color: #1c1fe2;
     font-size: 3rem;
     margin: auto;
 }
@@ -380,7 +353,7 @@ header{
 }
 
 .up i {
-    color: #090333;
+    color: #1c1fe2;
     font-size: 2rem;
     margin: auto;
 }
@@ -402,4 +375,32 @@ header{
 }
 
 
+@media screen and (min-width: 500px){
+    .social_media{
+        margin-top: 3rem;
+    }
 
+    .social_media i{
+        font-size: 3.1rem;
+        transition: color 650ms;
+    }
+
+    .social_media ul li{
+        margin-left: 15%;
+    }
+
+    img{
+        margin-left: 25px;
+    }
+
+    .about-details h1{
+        font-size: 8rem;
+        margin-left: -.5em;
+    }
+
+    .about-details p{
+        margin-left: -1em;
+    }
+
+
+}
