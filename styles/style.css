@@ -375,7 +375,7 @@ header{
 }
 
 
-@media screen and (min-width: 500px){
+@media screen and (max-width: 1080px){
     .social_media{
         margin-top: 3rem;
     }
