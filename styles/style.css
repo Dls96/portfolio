@@ -13,7 +13,7 @@ html{
 body{
     width: 100%;
     height: 100;
-    background: linear-gradient(to right bottom, #1dfb30, #00deb0, #00b8ff, #0087ff, #0f1af3);
+    background: linear-gradient(to right top, #434654, #37343e, #29242a, #191618, #000000);
 }
 
 a{
@@ -62,7 +62,7 @@ section{
 
 .section-heading h1{
     font-size: 3.5rem;
-    color: rgba(0, 0, 0, 0.3);
+    color: #d3fbd88a;
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
@@ -113,7 +113,7 @@ header{
 .landing-text h1{
     font-size: 14rem;
     font-family: 'Montana', sans-serif;
-    background: #005CDC;
+    background: linear-gradient(to top, #d3fbd8,  #555d7c);;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -123,7 +123,7 @@ header{
 .landing-text h6{
     font-size: 2rem;
     font-weight: 300;
-    color: #5e6279;
+    color: #d3fbd8;
 }
 
 .about .container{
@@ -152,7 +152,7 @@ header{
 
 .img-profile{
     flex: 1;
-    margin-right: 5rem;
+    margin-right: -20rem;
 }
 
 .about-details{
@@ -174,20 +174,20 @@ header{
 }
 
 .fa-linkedin:hover{
-    color: #00deb0;
+    color: #63A8FF;
 }
 
 .fa-github:hover{
-    color: #00deb0;
+    color: #63A8FF;
 }
 
 .fa-envelope:hover{
-    color: #00deb0;
+    color: #63A8FF;
 }
 
 .my_skills{
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba(185, 185, 185, 0.15);
+    box-shadow: 0 8px 32px 0 #555d7c9a;
     backdrop-filter: blur( 12.5px );
     -webkit-backdrop-filter: blur( 12.5px );
     border-radius: 10px;
@@ -225,26 +225,26 @@ header{
     font-weight: bold;
     padding-top: 10px; 
     padding-bottom: 10px;
-    color: #1900d6; 
+    color: #fff; 
 }
 
-.py{ width: 70%; background:rgba(0, 255, 213, 0.99)}
-.analysis{ width: 35%; background: rgba(0, 255, 213, 0.99)}
-.ml{ width: 50%; background:rgba(0, 255, 213, 0.99)}
-.dl{ width: 15%; background:rgba(0, 255, 213, 0.99)}
+.py{ width: 70%; background:#63A8FF}
+.analysis{ width: 35%; background: #63A8FF}
+.ml{ width: 50%; background:#63A8FF}
+.dl{ width: 15%; background:#63A8FF}
 
 .icon-container{
     width: 10rem;
     height: 10rem;
-    border: 3px solid #52FBDD;
-    background-color: #006EC7;
+    border: 3px solid #555D7C;
+    background-color: #434654;
     margin-bottom: 2rem;
     display: flex;
     padding: 1.2rem;
 }
 
 .icon-container span {
-    color: #52FBDD;
+    color: #ffffff;
     margin: auto;
 }
 
@@ -274,11 +274,12 @@ header{
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 300;
-    opacity: .3;
+    opacity: .7;
     margin-top: 1rem;
 }
 
 .proj-description h1{
+    color: #63A8FF;
     font-size: 3rem;
     font-weight: 300;
     margin:1rem 0;
@@ -289,12 +290,12 @@ header{
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: #24fa24;
+    color: #63A8FF;
     transition: color 500ms;
 }
 
 .proj-description .cta:hover{
-    color: #208CA7;
+    color: #D3FBD8;
 }
 
 
@@ -305,7 +306,7 @@ header{
 .copyright{
     width: 100%;
     text-align: center;
-    background: rgba(0, 255, 191, 0.25);
+    background: #555d7c91;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -334,7 +335,7 @@ header{
 }
 
 .get_cv i {
-    color: #1c1fe2;
+    color: #555D7C;
     font-size: 3rem;
     margin: auto;
 }
@@ -353,7 +354,7 @@ header{
 }
 
 .up i {
-    color: #1c1fe2;
+    color: #555D7C;
     font-size: 2rem;
     margin: auto;
 }
@@ -364,7 +365,7 @@ header{
 
 @keyframes pulse {
     0%{
-        box-shadow: 0 0 0 0 rgba(0, 255, 213, 0.99)
+        box-shadow: 0 0 0 0 #63A8FF
     }
     70%{
         box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0)
@@ -375,7 +376,7 @@ header{
 }
 
 
-@media screen and (max-width: 1080px){
+@media screen and (min-width: 320px) and (max-width: 767px){
     .social_media{
         margin-top: 3rem;
     }
@@ -389,8 +390,18 @@ header{
         margin-left: 15%;
     }
 
+
+    .img-profile img{
+        height: 0;
+        box-shadow: 0 0 0 0;
+    }
+
+    .proj-img{
+        margin-left: 1rem;
+    }
+
     img{
-        margin-left: 25px;
+        align-items: flex-end;
     }
 
     .about-details h1{
