@@ -67,7 +67,7 @@ section{
 
 .section-heading h1{
     font-size: 3.5rem;
-    color: #d3fbd88a;
+    color: #d6d6d65e;
     text-transform: uppercase;
     font-weight: 300;
     position: relative;
@@ -410,6 +410,12 @@ header{
         align-items: flex-end;
     }
 
+    .about-heading h6{
+        font-size: 3rem;
+        font-weight: 300;
+        margin-right: 3.5rem;
+    }   
+    
     .about-details h1{
         font-size: 8rem;
         margin-left: -.5em;
