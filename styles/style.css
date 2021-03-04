@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'Montana';
+    src:url('../styles/Montana.ttf') format('truetype');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -113,7 +118,8 @@ header{
 .landing-text h1{
     font-size: 14rem;
     font-family: 'Montana', sans-serif;
-    background: linear-gradient(to top, #d3fbd8,  #555d7c);;
+    background: linear-gradient(to top, #d3fbd8,  #555d7c);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
