@@ -303,30 +303,6 @@ header{
     position:relative
 }
 
-.get_cv{
-    position: absolute;
-    width: 5rem;
-    height: 5rem;
-    background: #eee;
-    top: -2.5rem;
-    left: 5rem;
-    border-radius: 100%;
-    display: flex;
-    cursor: pointer;
-    animation: pulse 1s infinite;
-}
-
-.get_cv a{
-    margin-left: 1.2rem;
-    align-self: center;
-}
-
-.get_cv i {
-    color: #555D7C;
-    font-size: 3rem;
-    margin: auto;
-}
-
 .up{
     position: absolute;
     width: 5rem;
